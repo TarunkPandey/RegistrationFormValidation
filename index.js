@@ -30,7 +30,7 @@ function validate() {
     document.getElementById("emailInvalid").style.display = "none";
   }
 
-  if (phoneNumber === "") {
+  if (phoneNumber === "" || phoneNumber.length != 10 || Number(phoneNumber[0]) <6) {
     document.getElementById("phoneInvalid").style.display = "block";
     document.getElementById("phoneValid").style.display = "none";
   } else {
@@ -38,5 +38,11 @@ function validate() {
     document.getElementById("phoneInvalid").style.display = "none";
   }
 
-
+  if (zipCode === "" || zipCode.length != 6) {
+    document.getElementById("zipInvalid").style.display = "block";
+    document.getElementById("zipValid").style.display = "none";
+  } else {
+    document.getElementById("zipValid").style.display = "block";
+    document.getElementById("zipInvalid").style.display = "none";
+  }
 }
