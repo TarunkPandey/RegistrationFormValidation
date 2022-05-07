@@ -5,6 +5,7 @@ function validate() {
   let phoneNumber = document.getElementById("phoneNumber").value;
   let state = document.getElementById("state").value;
   let zipCode = document.getElementById("zipCode").value;
+  let tNCCheckBox = document.getElementById("tNCCheckBox").checked;
 
   if (firstName === "") {
     document.getElementById("firstNameInvalid").style.display = "block";
@@ -45,4 +46,12 @@ function validate() {
     document.getElementById("zipValid").style.display = "block";
     document.getElementById("zipInvalid").style.display = "none";
   }
+  
+  if(!tNCCheckBox){
+   tNCInvalid.style.display = 'block'
+  }
+  else{
+    tNCInvalid.style.display = ''
+  }
+  
 }

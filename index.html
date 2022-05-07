@@ -27,14 +27,17 @@
           <label for="firstName" class="form-label">First name</label>
           <input type="text" class="form-control" id="firstName" required />
           <div class="valid-feedback" id="firstNameValid">Looks good!</div>
-          <div class="invalid-feedback" id="firstNameInvalid">Please enter valid first name.</div>
+          <div class="invalid-feedback" id="firstNameInvalid">
+            Please enter valid first name.
+          </div>
         </div>
         <div class="col-md-4">
           <label for="lastName" class="form-label">Last name</label>
           <input type="text" class="form-control" id="lastName" required />
           <div class="valid-feedback" id="lastNameValid">Looks good!</div>
-          <div class="invalid-feedback" id="lastNameInvalid">Please enter valid last name.</div>
-
+          <div class="invalid-feedback" id="lastNameInvalid">
+            Please enter valid last name.
+          </div>
         </div>
         <div class="col-md-4">
           <label for="email" class="form-label">Email</label>
@@ -42,14 +45,18 @@
             <span class="input-group-text" id="inputGroupPrepend">@</span>
             <input type="text" class="form-control" id="email" aria-describedby="inputGroupPrepend" required />
             <div class="valid-feedback" id="emailValid">Looks good!</div>
-            <div class="invalid-feedback" id="emailInvalid">Please enter valid email.</div>
+            <div class="invalid-feedback" id="emailInvalid">
+              Please enter valid email.
+            </div>
           </div>
         </div>
         <div class="col-md-4">
           <label for="phoneNumber" class="form-label">Phone Number (IN +91)</label>
           <input type="number" class="form-control" id="phoneNumber" required />
           <div class="valid-feedback" id="phoneValid">Looks good!</div>
-          <div class="invalid-feedback" id="phoneInvalid">Please enter a valid Phone Number.</div>
+          <div class="invalid-feedback" id="phoneInvalid">
+            Please enter a valid Phone Number.
+          </div>
         </div>
         <div class="col-md-4">
           <label for="state" class="form-label">State</label>
@@ -58,27 +65,34 @@
             <option>...</option>
           </select>
           <div class="valid-feedback" id="stateValid">Looks good!</div>
-          <div class="invalid-feedback" id="stateInvalid">Please enter a valid state.</div>
+          <div class="invalid-feedback" id="stateInvalid">
+            Please enter a valid state.
+          </div>
         </div>
         <div class="col-md-4">
           <label for="zipCode" class="form-label">Zip</label>
           <input type="number" class="form-control" id="zipCode" required />
           <div class="valid-feedback" id="zipValid">Looks good!</div>
-          <div class="invalid-feedback" id="zipInvalid">Please enter a valid zip.</div>
+          <div class="invalid-feedback" id="zipInvalid">
+            Please enter a valid zip.
+          </div>
         </div>
         <div class="col-12">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
-            <label class="form-check-label" for="invalidCheck">
+            <input class="form-check-input" type="checkbox"  id="tNCCheckBox" required/>
+            <label class="form-check-label" for="tNCCheckBox">
               Agree to terms and conditions
             </label>
-            <div class="invalid-feedback">
+            <div class="invalid-feedback" id="tNCInvalid">
               You must agree before submitting.
             </div>
           </div>
         </div>
         <div class="col-12">
-          <button class="btn btn-primary" type="button" onclick="validate()">Submit form</button> <!-- If there is one button on form, it is considered as submit button -->
+          <button class="btn btn-primary" type="button" onclick="validate()">
+            Submit form
+          </button>
+          <!-- If there is one button on form, it is considered as submit button -->
         </div>
       </form>
     </div>
